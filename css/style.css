@@ -161,8 +161,66 @@ section#payment-proof .container .row:nth-child(2) {
 }
 
 section#payment-proof .container .row:nth-child(2) img {
-	width: 1100px;
-	height: 600px;
+	max-width: 80vw;
+	max-height: 600px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+section#payment-proof .payment-proof-slider {
+	display: flex;
+	max-width: 80vw;
+	max-height: 600px;
+	justify-content: center;
+	position: relative;
+}
+
+section#payment-proof .payment-proof-slider .slick-dots {
+	z-index: 3;
+	display: flex;
+	position: absolute;
+	align-self: flex-end;
+	padding-bottom: 2rem;
+}
+
+section#payment-proof .payment-proof-slider .slick-dots li {
+	background: rgba(0,0,0, .5);
+	border-radius: 50%;
+	margin: 0 .5rem;
+	width: 20px;
+	height: 20px;
+}
+
+section#payment-proof .payment-proof-slider .slick-dots li button {
+	background: transparent;
+	border: 0;
+	color: rgba(0,0,0, .5);
+	width: 100%;
+	height: 100%;
+}
+
+section#payment-proof button.slick-prev.slick-arrow {
+	height: 33px;
+	width: 17px;
+	align-self: center;
+	background: url('../img/previous-arrow-black.png') no-repeat center / cover;
+	border: 0;
+	margin-right: 1rem;
+	content: '' !important;
+}
+
+section#payment-proof button.slick-next.slick-arrow {
+	height: 33px;
+	width: 17px;
+	align-self: center;
+	background: url('../img/next-arrow-black.png') no-repeat center / cover;
+	border: 0;
+	margin-left: 1rem;
+}
+
+section#payment-proof .payment-proof-container {
+	display: flex;
+	justify-content: center;
 }
 
 section#scam-list {
@@ -292,12 +350,23 @@ section#payment-processors .grid-payment-management {
 	grid-gap: 1rem;
 	width: 100%;
 	padding-top: 2.8rem;
+	padding-bottom: 1.5rem;
 }
 
 section#payment-processors .grid-payment-management a {
 	display: flex !important;
 	justify-content: center !important;
 	align-items: center;
+	height: 150px !important;
+}
+
+section#payment-processors .grid-payment-management a img {
+	height: 150px !important;
+}
+
+section#payment-processors .grid-payment-management a img.skrill {
+	max-width: 132px;
+	max-height: 50px !important;
 }
 
 footer.footer {
@@ -378,5 +447,14 @@ footer.footer a:hover {
 	}
 }
 
+@media (max-width: 1024px) {
+	section#payment-proof button.slick-prev.slick-arrow {
+		display: none;
+	}
+
+	section#payment-proof button.slick-next.slick-arrow {
+		display: none;
+	}
+}
 
 

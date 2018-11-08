@@ -1,6 +1,8 @@
 class Main {
 	constructor() {
 		this.$navbar = document.querySelector('#main-navbar');
+		this.$btnPrev = document.querySelector('.slick-prev.slick-arrow');
+		this.$btnNext = document.querySelector('.slick-next.slick-arrow');
 
 		this.addEventListeners()
 	}
@@ -19,8 +21,33 @@ class Main {
 		}
 	}
 
+	startSlider() {
+		$('.payment-proof-slider').slick({
+			slidesToShow: 1,
+			infinite: true,
+			arrows: false,
+			responsive: [{
+				breakpoint: 1024,
+				settings: {
+				  dots: true,
+				}
+			}]
+		});
+	}
+
+	prevSlider() {
+		$('.payment-proof-slider').slick('slickPrev')
+	}
+
+	nextSlider() {
+		$('.payment-proof-slider').slick('slickNext')
+	}
+
 	addEventListeners() {
 		window.addEventListener('scroll', this.changeNavbarBackground.bind(this))
+		window.addEventListener('load', this.startSlider.bind(this))
+		this.$btnPrev.addEventListener('click', this.prevSlider.bind(this))
+		this.$btnNext.addEventListener('click', this.nextSlider.bind(this))
 	}
 }
 
