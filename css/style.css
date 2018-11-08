@@ -1,0 +1,382 @@
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.transparent-navbar {
+	background: rgba(0, 0, 0, .6) !important;
+	border-bottom: 1px solid #fff;
+}
+
+a.navbar-brand {
+	text-transform: uppercase;
+	font-weight: 300;
+	transition: all ease .5s;
+	font-family: calibri;
+	font-size: 1.2rem;
+}
+
+a.navbar-brand:hover {
+	color: #7f8c8d !important;
+}
+
+header.intro-header {
+	background: url('../img/intro-bg.jpg') no-repeat center / cover;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+header.intro-header h1 {
+	color: #ecf0f1;
+	font-weight: bold;
+	font-size: 4.5rem;
+	text-shadow: 2px 2px 7px #000;
+} 
+
+header.intro-header h3 {
+	color: #ecf0f1;
+	padding-top: .5rem;
+	text-shadow: 1px 1px 4px #000;
+	font-weight: bold;
+}
+
+hr.intro-divider {
+	background-color: #ecf0f1;
+	width: 20%;
+	margin: 0 auto;
+	height: .5px;
+	margin-top: 1.5rem;
+}
+
+section#methods {
+	padding: 6rem 0 2rem;
+}
+
+section#methods .win-money img {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+section#methods h2 {
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: .5px;
+}
+
+section#methods img {
+	border-radius: 25px;
+}
+
+section#methods .second-row {
+	margin-top: 3rem;
+}
+
+section#methods .neobux-link {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+section#methods .second-row ul li .banner-neobux {
+	text-align: center;
+	padding: 1rem 0;
+}
+
+section#methods .second-row ul li .banner-clixsense {
+	text-align: center;
+	padding: 1rem 0;
+}
+
+section#methods .clixsense-link {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+section#methods .second-row ul li .banner-freebitcoin {
+	text-align: center;
+	padding: 1rem 0;
+}
+
+section#methods .second-row ul li .banner-freebitcoin img {
+	max-width: 125px;
+	max-height: 125px;
+}
+
+section#methods .freebitcoin-link {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+section#methods .btcclicks-link {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+section#methods .second-row ul li .banner-btcclicks {
+	text-align: center;
+	padding: 1rem 0;
+}
+
+section#payment-proof {
+	background: #ccc;
+	padding: 2rem 0 3rem;
+}
+
+section#payment-proof h2 {
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: .5px;
+}
+
+section#payment-proof p {
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 1rem;
+}
+
+section#payment-proof .container .row:nth-child(2) {
+	margin-top: 3rem;
+}
+
+section#payment-proof .container .row:nth-child(2) img {
+	width: 1100px;
+	height: 600px;
+}
+
+section#scam-list {
+	margin: 5rem 0;
+}
+
+section#scam-list h2 {
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: .5px;
+}
+
+section#scam-list hr.divider{
+	width: 100%;
+}
+
+section#scam-list .container .row:first-child img {
+	width: 470px;
+	height: 370px;
+	border-radius: 50%;
+}
+
+section#scam-list ol {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 200px;
+	padding-top: 1rem;
+}
+
+section#scam-list ol li {
+	margin-left: 1.5rem;
+}
+
+section.laptop {
+	width: 100vw;
+	height: 40vh;
+	background: url('../img/laptop.jpg') no-repeat center / cover;
+	margin: 0 0 5rem;
+}
+
+section.laptop .layer-laptop {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section.laptop .layer-laptop h2 {
+	text-transform: uppercase;
+	color: #ecf0f1;
+	text-shadow: 2px 2px 15px #000, 1px 1px 5px #000;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+section#tips {
+	margin-bottom: 3rem;
+	padding: 2rem 0;
+}
+
+section#tips h2 {
+	margin-bottom: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: .5px;
+}
+
+section#tips ul.tips-list {
+	list-style: circle;
+	padding-left: 1.5rem;
+}
+
+section#tips ul.tips-list li {
+	padding-bottom: .5rem; 
+}
+
+section#payment-processors {
+	padding: 3rem 0;
+	/*background: #ccc;*/
+	background: rgb(128, 128, 128);
+}
+
+section#payment-processors h2 {
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: .5px;
+	color: #fff;
+	text-shadow: 1px 1px 2px #000;
+}
+
+section#payment-processors .payment {
+	text-align: end;
+}
+
+section#payment-processors p {
+	color: #000;
+}
+
+section#payment-processors .payment-image {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+section#payment-processors .payment-image img {
+	max-width: 600px;
+	max-height: 400px;
+	margin: 2rem 0;
+	border-radius: 20px;
+	border: 1px double #fff;
+	padding: .15rem;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+section#payment-processors .grid-image {
+	max-height: 70%;
+	max-width: 80%;
+}
+
+section#payment-processors .grid-payment-management {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	width: 100%;
+	padding-top: 2.8rem;
+}
+
+section#payment-processors .grid-payment-management a {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center;
+}
+
+footer.footer {
+	padding: 1.5rem 0 1rem;
+}
+
+footer.footer p {
+	font-size: .8rem;
+	margin-top: 1rem;
+}
+
+footer.footer a {
+	font-size: .98rem;
+	color: #7f8c8d;
+	transition: all ease .5s;
+}
+
+footer.footer a:hover {
+	color: #000;
+}
+
+.neteller-link {
+	color: #83BA3B;
+	transition: all .15s ease-in-out;
+}
+
+.payoneer-link {
+	color: rgb(275, 72, 0);
+	transition: all .15s ease-in-out;
+}
+
+.skrill-link {
+	color: rgb(101, 65,113);
+	transition: all .15s ease-in-out;
+}
+
+.coinpayments-link {
+	color: rgb(3, 134, 223);
+	transition: all .15s ease-in-out;
+}
+
+.uphold-link {
+	color: rgb(74, 175, 87);
+	transition: all .15s ease-in-out;
+}
+
+.airtm-link {
+	color: rgb(23, 131, 250);
+}
+
+.airtm-link:hover {
+	color: rgb(33, 105, 183);
+}
+
+.uphold-link:hover {
+	color: rgb(58, 130, 66);
+}
+
+.coinpayments-link:hover {
+	color: rgb(21, 124, 193);
+}
+
+.payoneer-link:hover {
+	color: rgb(215, 63, 3);
+}
+
+.skrill-link:hover {
+	color: rgb(80, 52,89);
+}
+
+.neteller-link:hover {
+	color: rgb(125, 175, 58);
+}
+
+@media (max-width:1000px) {
+	section#scam-list .container .row:first-child img {
+		margin-bottom: 1.5rem !important;
+	}
+}
+
+
+
